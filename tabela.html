@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> HTML básico -> tabela</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <!-- Título -->
+    <table width="100%" height="100%">
+        <tr>
+            <th>
+                <h1><i>HTML</i> básico</h1>
+                <hr />
+            </th>
+        </tr>
+    </table>
+    <!-- Menu -->
+    <table width="100%" height="100%">
+        <tr>
+            <td style="text-align: center;">
+                <a href="estrutura.html">
+                    <strong>Estrutura</strong>
+                </a>
+            </td>
+            <td style="text-align: center;">
+                <a href="cabecalho.html">
+                    <strong>Cabeçalho</strong>
+                </a>
+            </td>
+            <td style="text-align: center;">
+                <a href="formatacao.html">
+                    <strong>Formatação</strong>
+                </a>
+            </td>
+            <td style="text-align: center;">
+                <a href="listas.html">
+                    <strong>Listas</strong>
+                </a>
+            </td>
+            <td style="text-align: center;">
+                <a href="links.html">
+                    <strong>Links</strong>
+                </a>
+            </td>
+            <td style="text-align: center;">
+                <a href="imagem.html">
+                    <strong>Imagem</strong>
+                </a>
+            </td>
+            <td style="text-align: center;">
+                <a href="tabela.html">
+                    <i><strong>Tabela</strong></i>
+                </a>
+            </td>
+            <td style="text-align: center;">
+                <a href="formulario.html">
+                    <strong>Formulário</strong>
+                </a>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <br />
+    <!-- Conteúdo -->
+    <table border="1" width="100%" height="100%">
+        <tr>
+            <th style="text-align: center;">
+                <strong>Tags</strong>
+            </th>
+            <th style="text-align: center;">
+                <strong>Descrição</strong>
+            </th>
+            <th style="text-align: center;">
+                <strong>Exemplo</strong>
+            </th>
+            <th style="text-align: center;">
+                <strong>Codigo Fonte</strong>
+            </th>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                <pre>&lt;table border="" width="" height=""&gt;   &lt;/table&gt;</pre>
+            </td>
+            <td style="text-align: center;">
+                Essa tag é usada para indicar a criação de uma tabela.
+                Ela pode vir acompanhada dos parametros border, que indica a espessura da borda,
+                width e height, que identificam respectivamente a largura e a altura em pixel ou em porcentagem.
+            </td>
+            <td rowspan="6">
+                <table border="1" width="100%" height="100%">
+                    <tr>
+                        <th colspan="2">  
+                            Cabeçalho A
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Celula A
+                        </td>
+                        <td>
+                            Celula B
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Celula C
+                        </td>
+                        <td>
+                            Celula D
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="text-align: center;" rowspan="6">
+                <img src="Imagem\tabela.png">
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                <pre>&lt;tr&gt;   &lt;/tr&gt;</pre>
+            </td>
+            <td style="text-align: center;">
+                Com essa tag é criada uma linha na tabela.
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                <pre>&lt;th&gt;   &lt;/th&gt;</pre>
+            </td>
+            <td style="text-align: center;">
+                Essa tag serve para criar uma celula de cabeçalho.
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                <pre>&lt;td&gt;   &lt;/td&gt;</pre>
+            </td>
+            <td style="text-align: center;">
+                Essa tag serve para criar uma celula comum.
+            </td>
+        </tr>
+    </table>
+    <!-- Imagem de rodapé-->
+    <br />
+    <center>
+        <img src="Imagem\dont panic.gif" width="300" />
+</body>
+
+</html>
