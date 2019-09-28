@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> HTML básico -> formulário </title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        td {
+            text-align: center
+        }
+
+        th {
+            text-align: center
+        }
+
+        table {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Título -->
+    <table>
+        <tr>
+            <th>
+                <h1><i>HTML</i> básico</h1>
+                <hr />
+            </th>
+        </tr>
+    </table>
+    <!-- Menu -->
+    <table>
+        <tr>
+            <td>
+                <a href="estrutura.html">
+                    <strong>Estrutura</strong>
+                </a>
+            </td>
+            <td>
+                <a href="cabecalho.html">
+                    <strong>Cabeçalho</strong>
+                </a>
+            </td>
+            <td>
+                <a href="formatacao.html">
+                    <strong>Formatação</strong>
+                </a>
+            </td>
+            <td>
+                <a href="listas.html">
+                    <strong>Listas</strong>
+                </a>
+            </td>
+            <td>
+                <a href="links.html">
+                    <strong>Links</strong>
+                </a>
+            </td>
+            <td>
+                <a href="imagem.html">
+                    <strong>Imagem</strong>
+                </a>
+            </td>
+            <td>
+                <a href="tabela.html">
+                    <strong>Tabela</strong>
+                </a>
+            </td>
+            <td>
+                <a href="formulario.html">
+                    <i><strong>Formulário</strong></i>
+                </a>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <!-- Conteúdo -->
+    <table border="1">
+        <tr>
+            <th colspan="3">
+                Estrutura do Formulário
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Tags
+            </th>
+            <th>
+                Descrição
+            </th>
+            <th>
+                Código Fonte
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <pre>&lt;form&gt;   &lt;/form&gt;</pre>
+            </td>
+            <td>
+                Dentro dessa tag será inserido todo conteudo do formulário.
+            </td>
+            <td rowspan="2">
+                <img src="Imagem/formulario.png" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <pre>&lt;input type="" name=""/&gt;</pre>
+            </td>
+            <td>
+                Essa tag sinaliza entrada de dados.
+                Ela vem acompanhada do parametro type que indica o tipo da entrada e
+                do parametro name que é o nome do entrada.
+            </td>
+        </tr>
+    </table>
+    <br />
+    <table border="1">
+        <tr>
+            <th colspan="4">
+                Tipos de Entradas
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Types
+            </th>
+            <th>
+                Descrição
+            </th>
+            <th>
+                Exemplos
+            </th>
+            <th>
+                Código Fonte
+            </th>
+        </tr>
+        <tr>
+            <td>
+                type="text"
+            </td>
+            <td>
+                Entrada do tipo caixa de texto.
+            </td>
+            <td>
+                <form>
+                    <input type="text" name="texto" />
+                </form>
+            </td>
+            <td>
+                <pre>&lt;input type="text" name="texto"/&gt;</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                type="password"
+            </td>
+            <td>
+                Entrada do tipo caixa de senha.
+            </td>
+            <td>
+                <form>
+                    <input type="password" name="senha" />
+                </form>
+            </td>
+            <td>
+                <pre>&lt;input type="password" name="senha"/&gt;</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                type="checkbox"
+            </td>
+            <td>
+                Criação de caixas de seleção.
+            </td>
+            <td>
+                <form>
+                    <input type="checkbox" name="caixa" />
+                    <input type="checkbox" name="caixa" />
+                </form>
+            </td>
+
+            <td>
+                <pre>&lt;input type="checkbox" name="caixa"/&gt;</pre>
+                <pre>&lt;input type="checkbox" name="caixa"/&gt;</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                type="radio"
+            </td>
+            <td>
+                Esse tipo é semelhante ao anterior com a diferença é
+                que com o radio só é possivel selecionar uma única opção.
+            </td>
+            <td>
+                <form>
+                    <input type="radio" name="opção" />
+                    <input type="radio" name="opção" />
+                </form>
+            </td>
+
+            <td>
+                <pre>&lt;input type="radio" name="opção"/&gt;</pre>
+                <pre>&lt;input type="radio" name="opção"/&gt;</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                type="submit"
+            </td>
+            <td>
+                Cria um botão que submete os dados do formulário.
+            </td>
+            <td>
+                <form>
+                    <input type="submit" value="submição" />
+                </form>
+            </td>
+
+            <td>
+                <pre>&lt;input type="submit" value="submição"/&gt;</pre>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <table border="1">
+        <tr>
+            <th colspan="4">
+                Aba de Opções
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Tags
+            </th>
+            <th>
+                Descrição
+            </th>
+            <th>
+                Exemplos
+            </th>
+            <th>
+                Código Fonte
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <pre>&lt;select&gt;   &lt;select/&gt;</pre>
+            </td>
+            <td>
+                Cria o botão expansivel que guarda as opções.
+            </td>
+            <td rowspan="2">
+                <select>
+                    <option>Opção A</option>
+                    <option>Opção B</option>
+                    <option>Opção C</option>
+                </select>
+            </td>
+            <td rowspan="2">
+                <img src="Imagem/aba.png"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <pre>&lt;option&gt;   &lt;option/&gt;</pre>
+            </td>
+            <td>
+                Insere as opções dentro do select.
+            </td>
+        </tr>
+    </table>
+    <br/>
+    <table border="1">
+        <tr>
+            <th colspan="3">
+                Outras Tags
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Tags
+            </th>
+            <th>
+                Descrição
+            </th>
+            <th>
+                Exemplos
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <pre>&lt;textarea&gt;   &lt;textarea/&gt;</pre>
+            </td>
+            <td>
+                Cria uma área de texto grande.
+            </td>
+            <td>
+                <textarea></textarea>
+            </td>
+        </tr>
+    </table>
+    <!-- Imagem de rodapé-->
+    <br />
+    <center>
+        <img src="Imagem\dont panic.gif" width="300" />
+</body>
+
+</html>
